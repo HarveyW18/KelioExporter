@@ -16,8 +16,8 @@ ScriptHebdo_ExportBageage est un projet C# qui récupère et analyse les donnée
 
 1. Clonez le dépôt :
     ```bash
-    git clone https://github.com/votre-utilisateur/ScriptHebdo_ExportBageage.git
-    cd ScriptHebdo_ExportBageage
+    git clone https://github.com/harveyw18/KelioExporter.git
+    cd KelioExporter
     ```
 
 2. Ouvrez le projet dans votre IDE C# préféré (comme Visual Studio).
