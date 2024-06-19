@@ -6,8 +6,8 @@ namespace KelioDataEx
 {
     internal class ApiConnector
     {
-        private static readonly string Username = "service";
-        private static readonly string Password = "@Helfer2023..";
+        private static readonly string Username = "_";
+        private static readonly string Password = "_";
 
         public static void ConfigureApiService(SoapHttpClientProtocol service, string serviceUrl, string servicePort)
         {

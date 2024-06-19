@@ -1,23 +1,18 @@
-﻿using KelioExporter.EmployeeProfessionalDataServiceClient1;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using KelioDataEx.EmployeeProfessionalDataServiceClient;
 
-namespace KelioExporter
+namespace KelioDataEx
 {
-    internal class ExportProfessionalData1
+    internal class ExportProfessionalData
     {
         // Méthode pour se connecter au service EmployeeProfessionalDataServiceClient
         private static EmployeeProfessionalDataService EmployeeProfessionalDataServiceClientConnexion()
         {
             EmployeeProfessionalDataService vEmployeeProfessionalDataService = new EmployeeProfessionalDataService();
             // Utiliser la classe Connection pour configurer le service
-            ApiConnector1.ConfigureApiService(
+            ApiConnector.ConfigureApiService(
                 vEmployeeProfessionalDataService,
-                "https://georges-helfer-sa.kelio.io/open/services/EmployeeProfessionalDataService",
-                "https://georges-helfer-sa.kelio.io/open/services/EmployeeProfessionalDataServiceHttpPort"
+                "https://eddws.kelio.io/open/services/EmployeeProfessionalDataService",
+                "https://eddws.kelio.io/open/services/EmployeeProfessionalDataServiceHttpPort"
             );
             return vEmployeeProfessionalDataService;
         }
@@ -27,7 +22,7 @@ namespace KelioExporter
         {
             EmployeeProfessionalDataService EmployeeProfessionalDataService = EmployeeProfessionalDataServiceClientConnexion();
 
-            EmployeeProfessionalDataServiceClient1.AskedPopulation AskedPopulation = new EmployeeProfessionalDataServiceClient1.AskedPopulation
+            EmployeeProfessionalDataServiceClient.AskedPopulation AskedPopulation = new EmployeeProfessionalDataServiceClient.AskedPopulation
             {
                 populationMode = 0,
                 populationFilter = null,
@@ -35,7 +30,7 @@ namespace KelioExporter
                 populationModeSpecified = true
             };
 
-            EmployeeProfessionalDataServiceClient1.AskedPopulation[] RequiredList = new EmployeeProfessionalDataServiceClient1.AskedPopulation[1];
+            EmployeeProfessionalDataServiceClient.AskedPopulation[] RequiredList = new EmployeeProfessionalDataServiceClient.AskedPopulation[1];
             RequiredList[0] = AskedPopulation;
 
             return EmployeeProfessionalDataService.exportEmployeeProfessionalDataList(RequiredList);

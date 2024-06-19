@@ -12,8 +12,8 @@ namespace KelioDataEx
             // Utiliser la classe Connection pour configurer le service
             ApiConnector.ConfigureApiService(
                 vDailyScheduleAssignmentService,
-                "https://georges-helfer-sa.kelio.io/open/services/DailyScheduleAssignmentService",
-                "https://georges-helfer-sa.kelio.io/open/services/DailyScheduleAssignmentServiceHttpPort"
+                "https://eddws.kelio.io/open/services/DailyScheduleAssignmentService",
+                "https://eddws.kelio.io/open/services/DailyScheduleAssignmentServiceHttpPort"
             );
             return vDailyScheduleAssignmentService;
         }

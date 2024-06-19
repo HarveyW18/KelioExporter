@@ -12,8 +12,8 @@ namespace KelioDataEx
             // Utiliser la classe Connection pour configurer le service
             ApiConnector.ConfigureApiService(
                 clockingService,
-                "https://georges-helfer-sa.kelio.io/open/services/ClockingService",
-                "https://georges-helfer-sa.kelio.io/open/services/ClockingServiceHttpPort"
+                "https://eddws.kelio.io/open/services/ClockingService",
+                "https://eddws.kelio.io/open/services/ClockingServiceHttpPort"
             );
             return clockingService;
         }
