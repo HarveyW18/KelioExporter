@@ -1,0 +1,9 @@
+C:\Users\c.wonga\source\repos\KelioDataEx\bin\Debug\KelioDataEx.exe.config
+C:\Users\c.wonga\source\repos\KelioDataEx\bin\Debug\KelioDataEx.exe
+C:\Users\c.wonga\source\repos\KelioDataEx\bin\Debug\KelioDataEx.pdb
+C:\Users\c.wonga\source\repos\KelioDataEx\obj\Debug\KelioDataEx.csproj.AssemblyReference.cache
+C:\Users\c.wonga\source\repos\KelioDataEx\obj\Debug\KelioDataEx.Properties.Resources.resources
+C:\Users\c.wonga\source\repos\KelioDataEx\obj\Debug\KelioDataEx.csproj.GenerateResource.cache
+C:\Users\c.wonga\source\repos\KelioDataEx\obj\Debug\KelioDataEx.csproj.CoreCompileInputs.cache
+C:\Users\c.wonga\source\repos\KelioDataEx\obj\Debug\KelioDataEx.exe
+C:\Users\c.wonga\source\repos\KelioDataEx\obj\Debug\KelioDataEx.pdb

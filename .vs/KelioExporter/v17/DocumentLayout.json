@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\c.wonga\\source\\repos\\KelioExporter\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9EFDE016-AD2E-4368-93AC-6D7A358BB910}|KelioExporter.csproj|C:\\Users\\c.wonga\\source\\repos\\KelioExporter\\apiconnector1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EFDE016-AD2E-4368-93AC-6D7A358BB910}|KelioExporter.csproj|solutionrelative:apiconnector1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EFDE016-AD2E-4368-93AC-6D7A358BB910}|KelioExporter.csproj|c:\\users\\c.wonga\\source\\repos\\kelioexporter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EFDE016-AD2E-4368-93AC-6D7A358BB910}|KelioExporter.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EFDE016-AD2E-4368-93AC-6D7A358BB910}|KelioExporter.csproj|C:\\Users\\c.wonga\\source\\repos\\KelioExporter\\exportclockingdata1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EFDE016-AD2E-4368-93AC-6D7A358BB910}|KelioExporter.csproj|solutionrelative:exportclockingdata1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EFDE016-AD2E-4368-93AC-6D7A358BB910}|KelioExporter.csproj|C:\\Users\\c.wonga\\source\\repos\\KelioExporter\\exportprofessionaldata1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EFDE016-AD2E-4368-93AC-6D7A358BB910}|KelioExporter.csproj|solutionrelative:exportprofessionaldata1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EFDE016-AD2E-4368-93AC-6D7A358BB910}|KelioExporter.csproj|C:\\Users\\c.wonga\\source\\repos\\KelioExporter\\exportdailyscheduleassignmentdata1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EFDE016-AD2E-4368-93AC-6D7A358BB910}|KelioExporter.csproj|solutionrelative:exportdailyscheduleassignmentdata1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 189,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApiConnector1.cs",
+              "DocumentMoniker": "C:\\Users\\c.wonga\\source\\repos\\KelioExporter\\ApiConnector1.cs",
+              "RelativeDocumentMoniker": "ApiConnector1.cs",
+              "ToolTip": "C:\\Users\\c.wonga\\source\\repos\\KelioExporter\\ApiConnector1.cs",
+              "RelativeToolTip": "ApiConnector1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T12:13:01.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExportClockingData1.cs",
+              "DocumentMoniker": "C:\\Users\\c.wonga\\source\\repos\\KelioExporter\\ExportClockingData1.cs",
+              "RelativeDocumentMoniker": "ExportClockingData1.cs",
+              "ToolTip": "C:\\Users\\c.wonga\\source\\repos\\KelioExporter\\ExportClockingData1.cs",
+              "RelativeToolTip": "ExportClockingData1.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T12:09:54.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ExportDailyScheduleAssignmentData1.cs",
+              "DocumentMoniker": "C:\\Users\\c.wonga\\source\\repos\\KelioExporter\\ExportDailyScheduleAssignmentData1.cs",
+              "RelativeDocumentMoniker": "ExportDailyScheduleAssignmentData1.cs",
+              "ToolTip": "C:\\Users\\c.wonga\\source\\repos\\KelioExporter\\ExportDailyScheduleAssignmentData1.cs",
+              "RelativeToolTip": "ExportDailyScheduleAssignmentData1.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAuwBEAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T12:12:14.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\c.wonga\\source\\repos\\KelioExporter\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\c.wonga\\source\\repos\\KelioExporter\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAQwHcAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T12:02:38.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExportProfessionalData1.cs",
+              "DocumentMoniker": "C:\\Users\\c.wonga\\source\\repos\\KelioExporter\\ExportProfessionalData1.cs",
+              "RelativeDocumentMoniker": "ExportProfessionalData1.cs",
+              "ToolTip": "C:\\Users\\c.wonga\\source\\repos\\KelioExporter\\ExportProfessionalData1.cs",
+              "RelativeToolTip": "ExportProfessionalData1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T12:11:02.885Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

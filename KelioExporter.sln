@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KelioExporter", "KelioExporter.csproj", "{9EFDE016-AD2E-4368-93AC-6D7A358BB910}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EFDE016-AD2E-4368-93AC-6D7A358BB910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EFDE016-AD2E-4368-93AC-6D7A358BB910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EFDE016-AD2E-4368-93AC-6D7A358BB910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EFDE016-AD2E-4368-93AC-6D7A358BB910}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2B242E3-2ABE-4184-A14D-B99F7553304B}
+	EndGlobalSection
+EndGlobal

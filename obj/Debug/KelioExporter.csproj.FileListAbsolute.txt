@@ -1,0 +1,9 @@
+C:\Users\c.wonga\source\repos\KelioExporter\bin\Debug\KelioExporter.exe.config
+C:\Users\c.wonga\source\repos\KelioExporter\bin\Debug\KelioExporter.exe
+C:\Users\c.wonga\source\repos\KelioExporter\bin\Debug\KelioExporter.pdb
+C:\Users\c.wonga\source\repos\KelioExporter\obj\Debug\KelioExporter.csproj.AssemblyReference.cache
+C:\Users\c.wonga\source\repos\KelioExporter\obj\Debug\KelioExporter.Properties.Resources.resources
+C:\Users\c.wonga\source\repos\KelioExporter\obj\Debug\KelioExporter.csproj.GenerateResource.cache
+C:\Users\c.wonga\source\repos\KelioExporter\obj\Debug\KelioExporter.csproj.CoreCompileInputs.cache
+C:\Users\c.wonga\source\repos\KelioExporter\obj\Debug\KelioExporter.exe
+C:\Users\c.wonga\source\repos\KelioExporter\obj\Debug\KelioExporter.pdb

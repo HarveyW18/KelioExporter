@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://echange.service.open.bodet.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="DailyScheduleAssignmentService" targetNamespace="http://echange.service.open.bodet.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns:tns="http://lang.java" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://lang.java">
+      <xsd:complexType name="Throwable">
+        <xsd:sequence />
+      </xsd:complexType>
+      <xsd:complexType name="Exception">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns:Throwable">
+            <xsd:sequence />
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns:ns0="http://lang.java" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://echange.service.open.bodet.com">
+      <xsd:complexType name="DailyScheduleAssignment">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns:EmployeeInformation">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="calculationModeContractedSchedule" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="scheduleAbbreviation" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="fourthWorkingPeriodEndTimePosition" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="fifthWorkingPeriodEndTimePosition" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="fifthWorkingPeriodStartTimePosition" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="firstWorkingPeriodEndTimePosition" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="firstWorkingPeriodStartTimePosition" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="nightStartTime" nillable="true" type="xsd:time" />
+              <xsd:element minOccurs="0" name="secondWorkingPeriodStartTimePosition" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="fourthWorkingPeriodStartTimePosition" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="thirdWorkingPeriodStartTimePosition" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="thirdWorkingPeriodEndTimePosition" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="secondWorkingPeriodEndTimePosition" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="halfDayTime" nillable="true" type="xsd:time" />
+              <xsd:element minOccurs="0" name="secondWorkingPeriodEndTime" nillable="true" type="xsd:time" />
+              <xsd:element minOccurs="0" name="thirdWorkingPeriodEndTime" nillable="true" type="xsd:time" />
+              <xsd:element minOccurs="0" name="fifthWorkingPeriodEndTime" nillable="true" type="xsd:time" />
+              <xsd:element minOccurs="0" name="thirdWorkingPeriodStartTime" nillable="true" type="xsd:time" />
+              <xsd:element minOccurs="0" name="firstWorkingPeriodStartTime" nillable="true" type="xsd:time" />
+              <xsd:element minOccurs="0" name="secondWorkingPeriodStartTime" nillable="true" type="xsd:time" />
+              <xsd:element minOccurs="0" name="fifthWorkingPeriodStartTime" nillable="true" type="xsd:time" />
+              <xsd:element minOccurs="0" name="firstWorkingPeriodEndTime" nillable="true" type="xsd:time" />
+              <xsd:element minOccurs="0" name="fourthWorkingPeriodEndTime" nillable="true" type="xsd:time" />
+              <xsd:element minOccurs="0" name="fourthWorkingPeriodStartTime" nillable="true" type="xsd:time" />
+              <xsd:element minOccurs="0" name="nightStartTimePosition" nillable="true" type="xsd:short" />
+              <xsd:element minOccurs="0" name="comment" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="afternoonContractedTime" nillable="true" type="xsd:double" />
+              <xsd:element minOccurs="0" name="morningContractedTime" nillable="true" type="xsd:double" />
+              <xsd:element minOccurs="0" name="assignmentDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="contractedTime" nillable="true" type="xsd:double" />
+              <xsd:element minOccurs="0" name="assignementByException" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="contractedFromWorkingPeriods" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="scheduleDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="dailyScheduleAbbreviation" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="dailyScheduleKey" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="dailyScheduleDescription" nillable="true" type="xsd:string" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="EmployeeInformation">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns:Object">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="employeeIdentificationNumber" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="archivedEmployee" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="employeeIdentificationCode" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="employeeBadgeCode" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="employeeKey" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="employeeSurname" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="employeeFirstName" nillable="true" type="xsd:string" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="Object" abstract="true">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="errorMessage" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="technicalString" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfDailyScheduleAssignment">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="DailyScheduleAssignment" nillable="true" type="tns:DailyScheduleAssignment" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="askedEmployee">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns:EmployeeInformation">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="endDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="startDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="startOffset" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="endOffset" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="dateMode" nillable="true" type="xsd:int" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfAskedEmployee">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="askedEmployee" nillable="true" type="tns:askedEmployee" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="AskedPopulationWithPeriod">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns:AskedPopulation">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="endDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="startDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="startOffset" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="endOffset" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="dateMode" nillable="true" type="xsd:int" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="AskedPopulation">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns:EmployeeInformation">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="populationStartDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="populationEndDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="populationFilter" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="groupFilter" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="populationMode" nillable="true" type="xsd:int" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfAskedPopulationWithPeriod">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="AskedPopulationWithPeriod" nillable="true" type="tns:AskedPopulationWithPeriod" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="exportDailyScheduleAssignments" type="tns:exportDailyScheduleAssignments" />
+      <xsd:complexType name="exportDailyScheduleAssignments">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="populationFilter" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="groupFilter" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="startDate" nillable="true" type="xsd:date" />
+          <xsd:element minOccurs="0" name="endDate" nillable="true" type="xsd:date" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="exportDailyScheduleAssignmentsResponse" type="tns:exportDailyScheduleAssignmentsResponse" />
+      <xsd:complexType name="exportDailyScheduleAssignmentsResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="exportedDailyScheduleAssignments" type="tns:ArrayOfDailyScheduleAssignment" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="exportDailyScheduleAssignmentsFromEmployeeList" type="tns:exportDailyScheduleAssignmentsFromEmployeeList" />
+      <xsd:complexType name="exportDailyScheduleAssignmentsFromEmployeeList">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="employeeList" type="tns:ArrayOfAskedEmployee" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="exportDailyScheduleAssignmentsFromEmployeeListResponse" type="tns:exportDailyScheduleAssignmentsFromEmployeeListResponse" />
+      <xsd:complexType name="exportDailyScheduleAssignmentsFromEmployeeListResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="exportedDailyScheduleAssignments" type="tns:ArrayOfDailyScheduleAssignment" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="importDailyScheduleAssignments" type="tns:importDailyScheduleAssignments" />
+      <xsd:complexType name="importDailyScheduleAssignments">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="dailyScheduleAssignmentsToImport" type="tns:ArrayOfDailyScheduleAssignment" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="importDailyScheduleAssignmentsResponse" type="tns:importDailyScheduleAssignmentsResponse" />
+      <xsd:complexType name="importDailyScheduleAssignmentsResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="dailyScheduleAssignmentsInError" type="tns:ArrayOfDailyScheduleAssignment" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="deleteDailyScheduleAssignments" type="tns:deleteDailyScheduleAssignments" />
+      <xsd:complexType name="deleteDailyScheduleAssignments">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="dailyScheduleAssignmentsToDelete" type="tns:ArrayOfDailyScheduleAssignment" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="deleteDailyScheduleAssignmentsResponse" type="tns:deleteDailyScheduleAssignmentsResponse" />
+      <xsd:complexType name="deleteDailyScheduleAssignmentsResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="dailyScheduleAssignmentsInError" type="tns:ArrayOfDailyScheduleAssignment" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="exportDailyScheduleAssignmentsList" type="tns:exportDailyScheduleAssignmentsList" />
+      <xsd:complexType name="exportDailyScheduleAssignmentsList">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="populationFilter" type="tns:ArrayOfAskedPopulationWithPeriod" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="exportDailyScheduleAssignmentsListResponse" type="tns:exportDailyScheduleAssignmentsListResponse" />
+      <xsd:complexType name="exportDailyScheduleAssignmentsListResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="exportedDailyScheduleAssignments" type="tns:ArrayOfDailyScheduleAssignment" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Exception" nillable="true" type="ns0:Exception" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Exception">
+    <wsdl:part name="Exception" element="tns:Exception" />
+  </wsdl:message>
+  <wsdl:message name="exportDailyScheduleAssignments">
+    <wsdl:part name="parameters" element="tns:exportDailyScheduleAssignments" />
+  </wsdl:message>
+  <wsdl:message name="exportDailyScheduleAssignmentsResponse">
+    <wsdl:part name="parameters" element="tns:exportDailyScheduleAssignmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="exportDailyScheduleAssignmentsFromEmployeeList">
+    <wsdl:part name="parameters" element="tns:exportDailyScheduleAssignmentsFromEmployeeList" />
+  </wsdl:message>
+  <wsdl:message name="exportDailyScheduleAssignmentsFromEmployeeListResponse">
+    <wsdl:part name="parameters" element="tns:exportDailyScheduleAssignmentsFromEmployeeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="importDailyScheduleAssignments">
+    <wsdl:part name="parameters" element="tns:importDailyScheduleAssignments" />
+  </wsdl:message>
+  <wsdl:message name="importDailyScheduleAssignmentsResponse">
+    <wsdl:part name="parameters" element="tns:importDailyScheduleAssignmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteDailyScheduleAssignments">
+    <wsdl:part name="parameters" element="tns:deleteDailyScheduleAssignments" />
+  </wsdl:message>
+  <wsdl:message name="deleteDailyScheduleAssignmentsResponse">
+    <wsdl:part name="parameters" element="tns:deleteDailyScheduleAssignmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="exportDailyScheduleAssignmentsList">
+    <wsdl:part name="parameters" element="tns:exportDailyScheduleAssignmentsList" />
+  </wsdl:message>
+  <wsdl:message name="exportDailyScheduleAssignmentsListResponse">
+    <wsdl:part name="parameters" element="tns:exportDailyScheduleAssignmentsListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DailyScheduleAssignmentServicePortType">
+    <wsdl:operation name="exportDailyScheduleAssignments">
+      <wsdl:input name="exportDailyScheduleAssignments" message="tns:exportDailyScheduleAssignments" />
+      <wsdl:output name="exportDailyScheduleAssignmentsResponse" message="tns:exportDailyScheduleAssignmentsResponse" />
+      <wsdl:fault name="Exception" message="tns:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="exportDailyScheduleAssignmentsFromEmployeeList">
+      <wsdl:input name="exportDailyScheduleAssignmentsFromEmployeeList" message="tns:exportDailyScheduleAssignmentsFromEmployeeList" />
+      <wsdl:output name="exportDailyScheduleAssignmentsFromEmployeeListResponse" message="tns:exportDailyScheduleAssignmentsFromEmployeeListResponse" />
+      <wsdl:fault name="Exception" message="tns:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="importDailyScheduleAssignments">
+      <wsdl:input name="importDailyScheduleAssignments" message="tns:importDailyScheduleAssignments" />
+      <wsdl:output name="importDailyScheduleAssignmentsResponse" message="tns:importDailyScheduleAssignmentsResponse" />
+      <wsdl:fault name="Exception" message="tns:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteDailyScheduleAssignments">
+      <wsdl:input name="deleteDailyScheduleAssignments" message="tns:deleteDailyScheduleAssignments" />
+      <wsdl:output name="deleteDailyScheduleAssignmentsResponse" message="tns:deleteDailyScheduleAssignmentsResponse" />
+      <wsdl:fault name="Exception" message="tns:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="exportDailyScheduleAssignmentsList">
+      <wsdl:input name="exportDailyScheduleAssignmentsList" message="tns:exportDailyScheduleAssignmentsList" />
+      <wsdl:output name="exportDailyScheduleAssignmentsListResponse" message="tns:exportDailyScheduleAssignmentsListResponse" />
+      <wsdl:fault name="Exception" message="tns:Exception" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DailyScheduleAssignmentServiceSoapBinding" type="tns:DailyScheduleAssignmentServicePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="exportDailyScheduleAssignments">
+      <soap:operation soapAction="urn:exportDailyScheduleAssignments" style="document" />
+      <wsdl:input name="exportDailyScheduleAssignments">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="exportDailyScheduleAssignmentsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="exportDailyScheduleAssignmentsFromEmployeeList">
+      <soap:operation soapAction="urn:exportDailyScheduleAssignmentsFromEmployeeList" style="document" />
+      <wsdl:input name="exportDailyScheduleAssignmentsFromEmployeeList">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="exportDailyScheduleAssignmentsFromEmployeeListResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="importDailyScheduleAssignments">
+      <soap:operation soapAction="urn:importDailyScheduleAssignments" style="document" />
+      <wsdl:input name="importDailyScheduleAssignments">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="importDailyScheduleAssignmentsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteDailyScheduleAssignments">
+      <soap:operation soapAction="urn:deleteDailyScheduleAssignments" style="document" />
+      <wsdl:input name="deleteDailyScheduleAssignments">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="deleteDailyScheduleAssignmentsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="exportDailyScheduleAssignmentsList">
+      <soap:operation soapAction="urn:exportDailyScheduleAssignmentsList" style="document" />
+      <wsdl:input name="exportDailyScheduleAssignmentsList">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="exportDailyScheduleAssignmentsListResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DailyScheduleAssignmentService">
+    <wsdl:port name="DailyScheduleAssignmentServiceHttpPort" binding="tns:DailyScheduleAssignmentServiceSoapBinding">
+      <soap:address location="https://georges-helfer-sa.kelio.io/open/services/DailyScheduleAssignmentService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

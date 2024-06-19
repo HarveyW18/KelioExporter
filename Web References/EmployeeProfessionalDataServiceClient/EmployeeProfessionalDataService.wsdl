@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://echange.service.open.bodet.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="EmployeeProfessionalDataService" targetNamespace="http://echange.service.open.bodet.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns:tns="http://lang.java" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://lang.java">
+      <xsd:complexType name="Throwable">
+        <xsd:sequence />
+      </xsd:complexType>
+      <xsd:complexType name="Exception">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns:Throwable">
+            <xsd:sequence />
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns:ns0="http://lang.java" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://echange.service.open.bodet.com">
+      <xsd:complexType name="EmployeeProfessionalData">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns:EmployeeInformationAndCriterion">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="replacedPersonName" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="replacedPersonSurname" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentTimeContractRepealDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="currentContractRateDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentQualificationCode" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentQualificationDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentTimeContractTypeCode" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="currentTimeContractValue" nillable="true" type="xsd:double" />
+              <xsd:element minOccurs="0" name="currentJobPositionCode" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentJobPositionDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentPersonnelCategoryCode" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="currentPersonnelCategoryDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="wageBand" nillable="true" type="xsd:double" />
+              <xsd:element minOccurs="0" name="jobHeldAbbreviation" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="initialEnd" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="invoicedRate" nillable="true" type="xsd:double" />
+              <xsd:element minOccurs="0" name="jobHeldDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="hourlyRate" nillable="true" type="xsd:double" />
+              <xsd:element minOccurs="0" name="staffRepresentativeAssignmentCode" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentProfessionalStatusCode" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentPlannedEndDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="defaultSupervisorSurname" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="defaultSupervisorFirstName" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="contractObjetStartDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="defaultSupervisorBadgeCode" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="defaultSupervisorKey" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="remoteWorkingAutomaticClocking" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="billingStartDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="conventionStartDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="complementStartDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="automaticGenerationWorkingTime" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="currentJobAbbreviation" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="attachmentAgencyDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="attachmentAgencyAbbreviation" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="useReasonAbbreviation" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="replacedPersonKey" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="useReasonDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="payrollTransmissionDay" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="currentCoefficientCode" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentTimeContractNumber" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentContractRateCode" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="contractComment" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="reasonForLeavingDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="trialPeriodDuration" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="quotaDayValue" nillable="true" type="xsd:double" />
+              <xsd:element minOccurs="0" name="quotaOtherChoiceDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentStateFinalPayDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="quotaUnitCode" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="currentStateFinalPayAbbreviation" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="quotaPeriodicityCode" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="quotaHourValue" nillable="true" type="xsd:double" />
+              <xsd:element minOccurs="0" name="professionalPhoneNumber2" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentWorkingDurationApplicationDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="currentCoefficientApplicationDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="currentTimeContractApplicationDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="currentPersonalizedResetEndAbbreviation" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentPersonalizedResetEndDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentPersonalizedResetStartAbbreviation" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="natureContractStartDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="currentPersonalizedResetStartDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="notGenerateAutomaticClockingsRemoteWorking" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="workDurationStartDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="seniorityStartDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="workedHoursDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="businessLeaveType" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="employeeSecondName" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="fullTimeEquivalent" nillable="true" type="xsd:double" />
+              <xsd:element minOccurs="0" name="professionalPhoneNumber1" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="automaticPresenceNotificationMode" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="attendanceIndicationMode" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="photo" nillable="true" type="xsd:base64Binary" />
+              <xsd:element minOccurs="0" name="weeklyWorkedDayRate" nillable="true" type="xsd:double" />
+              <xsd:element minOccurs="0" name="currentSectionDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="trialPeriod" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="presenceManagement" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="arrivalInCompanyDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="professionalPhoneNumberAbbreviation1" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="professionalPhoneNumberAbbreviation3" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="employeeMaidenName" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="contractType" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="complementDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="complementAbbreviation" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="hourlyContractEndResetResult" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="displayedNumberOfHours" nillable="true" type="xsd:double" />
+              <xsd:element minOccurs="0" name="DefaultRespectedRest" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="defaultWorkingTime" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="departureNotification" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="takenIntoAccountPeriodReasonForLeavingComment" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="numberOfExtension" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="numberOfWeeklyHours" nillable="true" type="xsd:double" />
+              <xsd:element minOccurs="0" name="currentProfessionalStatusDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="takenIntoAccountPeriodReasonForLeavingCode" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="takenIntoAccountPeriodReasonForLeavingDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentTimeContractTypeDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentPersonnelCategory" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="defaultSupervisorIdentificationNumber" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="defaultSupervisorIdentificationCode" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="staffRepresentativeAssignmentStartDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="staffRepresentativeAssignmentEndDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="staffRepresentativeAssignmentDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentContractCharacteristicCode" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentContractCharacteristicDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="userProfileAssignmentWizardKey" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="userProfileAssignmentWizardDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="dailyRestTimeDeclaration" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="replacedPersonBadgeCode" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="replacedPersonIdentificationNumber" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="replacedPersonIdentificationCode" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="hourlyBasisDistributionDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="hourlyBasisDistributionAbbreviation" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="classificationLevelDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="classificationLevelAbbreviation" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="classificationIndexDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="classificationIndexAbbreviation" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="classificationPositionDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="classificationPositionAbbreviation" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="collectiveConventionAbbreviation" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="trialPeriodEndDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="currentTimeContractDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentCoefficientDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentSectionFullDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentHourlyContractAbbreviation" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentDepartmentDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentSubDepartmentDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentHourlyContractDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="professionalPhoneNumberAbbreviation4" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="closePreviousTakenIntoAccountPeriod" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="professionalPhoneNumberAbbreviation2" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentTimeContractCode" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="presenceManagementDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="closePreviousSectionAssignments" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="closeExceptionalAssignments" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="hourlyContractAssignmentInformation" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentSectionAssigningDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="currentJobApplicationDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="professionalEmail" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentSectionAbbreviation" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="takenIntoAccountPeriodResetResult" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="currentSectionKey" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="currentLevel5Description" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentJobDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentLevel8Description" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentLevel7Description" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentLevel6Description" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentLevel4Description" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentFirmDescription" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="professionalPhoneNumber4" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="employeeAbbreviation" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="isManagedInActivity" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="toBeScheduled" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="professionalPhoneNumber3" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="isHRWorkspaceEmployee" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="automaticPresenceNotification" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="collectiveConventionDescription" nillable="true" type="xsd:string" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="EmployeeInformationAndCriterion" abstract="true">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns:EmployeeInformation">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="useDefaultModelEmployee" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="generateBadge" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="currentAccessAuthorizationEndDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="isTandAModuleEmployee" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="isAccessModuleEmployee" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="takenIntoAccountEndDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="defaultEmployeeIdentificationNumber" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="defaultEmployeeIdentificationCode" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="currentAccessAuthorizationStartTime" nillable="true" type="xsd:time" />
+              <xsd:element minOccurs="0" name="currentAccessAuthorizationEndTime" nillable="true" type="xsd:time" />
+              <xsd:element minOccurs="0" name="currentAccessAuthorizationStartDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="takenIntoAccountPeriodEndDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="takenIntoAccountStartDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="defaultEmployeeFirstName" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="defaultEmployeeBadge" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="searchUsingBadge" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="takenIntoAccountPeriodStartDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="defaultEmployeeSurname" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="searchUsingIdentificationNumber" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="searchUsingFirstname" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="searchUsingSurname" nillable="true" type="xsd:boolean" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="EmployeeInformation">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns:Object">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="employeeIdentificationNumber" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="archivedEmployee" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="employeeIdentificationCode" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="employeeBadgeCode" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="employeeKey" nillable="true" type="xsd:int" />
+              <xsd:element minOccurs="0" name="employeeSurname" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="employeeFirstName" nillable="true" type="xsd:string" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="Object" abstract="true">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="errorMessage" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="technicalString" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfEmployeeProfessionalData">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="EmployeeProfessionalData" nillable="true" type="tns:EmployeeProfessionalData" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="AskedPopulation">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns:EmployeeInformation">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="populationStartDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="populationEndDate" nillable="true" type="xsd:date" />
+              <xsd:element minOccurs="0" name="populationFilter" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="groupFilter" nillable="true" type="xsd:string" />
+              <xsd:element minOccurs="0" name="populationMode" nillable="true" type="xsd:int" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfAskedPopulation">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="AskedPopulation" nillable="true" type="tns:AskedPopulation" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="exportEmployeeProfessionalData" type="tns:exportEmployeeProfessionalData" />
+      <xsd:complexType name="exportEmployeeProfessionalData">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="populationFilter" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="groupFilter" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="exportEmployeeProfessionalDataResponse" type="tns:exportEmployeeProfessionalDataResponse" />
+      <xsd:complexType name="exportEmployeeProfessionalDataResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="exportedEmployeeProfessionalData" type="tns:ArrayOfEmployeeProfessionalData" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="exportEmployeeProfessionalDataList" type="tns:exportEmployeeProfessionalDataList" />
+      <xsd:complexType name="exportEmployeeProfessionalDataList">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="exportFilter" type="tns:ArrayOfAskedPopulation" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="exportEmployeeProfessionalDataListResponse" type="tns:exportEmployeeProfessionalDataListResponse" />
+      <xsd:complexType name="exportEmployeeProfessionalDataListResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="exportedEmployeeProfessionalData" type="tns:ArrayOfEmployeeProfessionalData" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="importEmployeeProfessionalData" type="tns:importEmployeeProfessionalData" />
+      <xsd:complexType name="importEmployeeProfessionalData">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="employeeProfessionalToImport" type="tns:ArrayOfEmployeeProfessionalData" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="importEmployeeProfessionalDataResponse" type="tns:importEmployeeProfessionalDataResponse" />
+      <xsd:complexType name="importEmployeeProfessionalDataResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="employeeProfessionalInError" type="tns:ArrayOfEmployeeProfessionalData" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Exception" nillable="true" type="ns0:Exception" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Exception">
+    <wsdl:part name="Exception" element="tns:Exception" />
+  </wsdl:message>
+  <wsdl:message name="exportEmployeeProfessionalData">
+    <wsdl:part name="parameters" element="tns:exportEmployeeProfessionalData" />
+  </wsdl:message>
+  <wsdl:message name="exportEmployeeProfessionalDataResponse">
+    <wsdl:part name="parameters" element="tns:exportEmployeeProfessionalDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="exportEmployeeProfessionalDataList">
+    <wsdl:part name="parameters" element="tns:exportEmployeeProfessionalDataList" />
+  </wsdl:message>
+  <wsdl:message name="exportEmployeeProfessionalDataListResponse">
+    <wsdl:part name="parameters" element="tns:exportEmployeeProfessionalDataListResponse" />
+  </wsdl:message>
+  <wsdl:message name="importEmployeeProfessionalData">
+    <wsdl:part name="parameters" element="tns:importEmployeeProfessionalData" />
+  </wsdl:message>
+  <wsdl:message name="importEmployeeProfessionalDataResponse">
+    <wsdl:part name="parameters" element="tns:importEmployeeProfessionalDataResponse" />
+  </wsdl:message>
+  <wsdl:portType name="EmployeeProfessionalDataPortType">
+    <wsdl:operation name="exportEmployeeProfessionalData">
+      <wsdl:input name="exportEmployeeProfessionalData" message="tns:exportEmployeeProfessionalData" />
+      <wsdl:output name="exportEmployeeProfessionalDataResponse" message="tns:exportEmployeeProfessionalDataResponse" />
+      <wsdl:fault name="Exception" message="tns:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="exportEmployeeProfessionalDataList">
+      <wsdl:input name="exportEmployeeProfessionalDataList" message="tns:exportEmployeeProfessionalDataList" />
+      <wsdl:output name="exportEmployeeProfessionalDataListResponse" message="tns:exportEmployeeProfessionalDataListResponse" />
+      <wsdl:fault name="Exception" message="tns:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="importEmployeeProfessionalData">
+      <wsdl:input name="importEmployeeProfessionalData" message="tns:importEmployeeProfessionalData" />
+      <wsdl:output name="importEmployeeProfessionalDataResponse" message="tns:importEmployeeProfessionalDataResponse" />
+      <wsdl:fault name="Exception" message="tns:Exception" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EmployeeProfessionalDataServiceSoapBinding" type="tns:EmployeeProfessionalDataPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="exportEmployeeProfessionalData">
+      <soap:operation soapAction="urn:exportEmployeeProfessionalData" style="document" />
+      <wsdl:input name="exportEmployeeProfessionalData">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="exportEmployeeProfessionalDataResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="exportEmployeeProfessionalDataList">
+      <soap:operation soapAction="urn:exportEmployeeProfessionalDataList" style="document" />
+      <wsdl:input name="exportEmployeeProfessionalDataList">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="exportEmployeeProfessionalDataListResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="importEmployeeProfessionalData">
+      <soap:operation soapAction="urn:importEmployeeProfessionalData" style="document" />
+      <wsdl:input name="importEmployeeProfessionalData">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="importEmployeeProfessionalDataResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EmployeeProfessionalDataService">
+    <wsdl:port name="EmployeeProfessionalDataServiceHttpPort" binding="tns:EmployeeProfessionalDataServiceSoapBinding">
+      <soap:address location="https://georges-helfer-sa.kelio.io/open/services/EmployeeProfessionalDataService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

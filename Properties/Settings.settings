@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="KelioExporter.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="KelioDataEx_ClockingServiceClient_ClockingService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://georges-helfer-sa.kelio.io/open/services/ClockingService</Value>
+    </Setting>
+    <Setting Name="KelioDataEx_EmployeeProfessionalDataServiceClient_EmployeeProfessionalDataService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://georges-helfer-sa.kelio.io/open/services/EmployeeProfessionalDataService</Value>
+    </Setting>
+    <Setting Name="KelioDataEx_DailyScheduleAssignmentServiceClient_DailyScheduleAssignmentService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://georges-helfer-sa.kelio.io/open/services/DailyScheduleAssignmentService</Value>
+    </Setting>
+    <Setting Name="KelioExporter_ClockingServiceClient1_ClockingService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://georges-helfer-sa.kelio.io/open/services/ClockingService</Value>
+    </Setting>
+    <Setting Name="KelioExporter_mployeeProfessionalDataServiceClient_EmployeeProfessionalDataService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://georges-helfer-sa.kelio.io/open/services/EmployeeProfessionalDataService</Value>
+    </Setting>
+    <Setting Name="KelioExporter_DailyScheduleAssignmentServiceClient1_DailyScheduleAssignmentService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://georges-helfer-sa.kelio.io/open/services/DailyScheduleAssignmentService</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
