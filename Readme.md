@@ -44,7 +44,7 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 ## Auteurs
 
-- **Votre Nom** - *Développeur principal* - [Votre Profil GitHub](https://github.com/votre-utilisateur)
+- **HarveyW18** - *Développeur principal*
 
 ## Remerciements
 
